@@ -1,0 +1,19 @@
+<?php 
+
+$servername = "localhost";
+$username = "fan";
+$password = "cartoon";
+
+$conn = new mysqli( $servername, $username, $password );
+
+if( $conn->connect_error )
+{
+    die( "Connect error: " . $conn->connect_error );
+}
+
+echo "Connected successfully!";
+
+echo "This page will be for inserting into the database.";
+
+?>
+
